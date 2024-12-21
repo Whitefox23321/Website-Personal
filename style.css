@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover{
+    color: yellowgreen;
+    text-shadow: 0 0 25px yellowgreen,
+                 0 0 50px yellowgreen;
+    transform: scale(1.1);
+}
+
+span{
+    color: yellowgreen;
+}
+
+.navbar a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover{
+    color: yellowgreen;
+    border-bottom: 3px solid yellowgreen;
+}
+
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover{
+    background-color: yellowgreen;
+    box-shadow: 0 0 25px yellowgreen;
+    color: white;
+}
+
+.home{
+    width: 100%;
+    min-height:100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content{
+    max-width: 800px;
+}
+
+.home-content h3{
+    font-size: 42px;
+    position: relative;
+}
+
+.home-content h3::before{
+    content: '';
+    position: absolute;
+    animation: ShowLeft 1s ease forwards;
+    background: rgb(241, 241, 241);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation-delay: 1.5s;
+}
+
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+    position: relative;
+}
+
+.home-content h1::before{
+    content: '';
+    position: absolute;
+    background: rgb(241, 241, 241);
+    animation: ShowRight 1s ease forwards;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation-delay: 1s;
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    position: relative;
+}
+
+.home-content p::before{
+    content: '';
+    position: absolute;
+    background:rgb(241, 241, 241);
+    animation: ShowLeft 1s ease forwards;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation-delay: 1s;
+
+}
+
+.btn-box{
+    width:345px;
+    display: flex;
+    gap: 2em;
+    
+}
+
+img{
+    width: 400px;
+    border-radius: 200px;
+    box-shadow: 3px 3px 3px yellowgreen;
+}
+
+.btn-1{
+    padding: 15px 28px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: yellowgreen;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 15px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-1:hover{
+    background-color: white;
+    color:black;
+    border: 2px solid black;
+}
+
+.btn-1 a:hover{
+    color: black;
+    font-weight: 600;
+}
+
+.port{
+    text-align: center;
+    margin-top: 20px;
+    transition: 0.3s;
+
+}
+
+.port:hover{
+    text-shadow: 0 0 25px yellowgreen,
+                 0 0 50px yellowgreen;
+    color: yellowgreen;
+    transform: scale(1.1);
+    font-weight: 600;
+
+}
+
+.portofolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 5rem; 
+    flex-wrap: wrap;
+    
+    
+}
+
+.project {
+    text-align: center;
+    box-shadow: 1px 1px 3px black;
+    padding: 15px; 
+    border-radius: 20px;
+    margin-top: 80px;
+    background-color: whitesmoke;
+    transition: all 0.3s;
+}
+
+.bawah{
+    color: black;
+}
+
+.project:hover{
+    background:yellowgreen;
+    color: white;
+    transform: scale(1.1);
+}
+
+.img-1, .img-2, .img-3 {
+    width: 300px;
+    margin-top: 20px;
+    object-fit: cover; 
+    border-radius: 9px;
+}
+
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #010101;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+
+.skill-per{
+    height: 14px;
+    background: yellowgreen;
+    border-radius: 3px;
+    position: relative;
+}
+
+.skill-per::before{
+    content: attr(per);
+    background: white;
+    padding: 15px;
+}
+
+.skills{
+    box-shadow: 1px 1px 3px black;
+    padding: 30px;
+    transition: ease 0.3s;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+}
+
+.skil{
+    margin-top: 120px;
+    transition: ease 0.3s;
+}
+
+.skil:hover{
+    text-shadow: 0 0 25px yellowgreen,
+                 0 0 50px yellowgreen;
+    color: yellowgreen;
+    transform: scale(1.1);
+    font-weight: 600;
+}
+
+.skills:hover{
+    transform: scale(1.1);
+}
+
+.gambar{
+    width: 200px;
+}
+
+.kontak{
+    box-shadow: 1px 1px 3px black;
+    padding: 50px;
+    border-radius: 4px;
+    transition: ease 0.3s;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+
+.kontak:hover{
+   background: yellowgreen;
+   transform: scale(1.1);
+   color: white;
+   font-weight: 600;
+}
+
+.mail{
+    width: 35px;
+    margin-top: 15px;
+}
+
+.mail:hover{
+    animation: shake 500ms ease-in-out ;
+}
+
+.email{
+    text-align: center;
+    font-size: 15px;
+   
+}
+
+footer{
+    width: 100%;
+    background: yellowgreen;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    padding: 10px;
+}
+
+@keyframes ShowRight{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes ShowLeft{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes shake{
+     10% {rotate: 12deg;}
+     30%,70% {rotate: -25deg;}
+     50%,80% {rotate: 25deg;}
+}
+
+
+
