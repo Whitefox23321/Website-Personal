@@ -148,7 +148,7 @@ span{
 img{
     width: 400px;
     border-radius: 200px;
-    box-shadow: 3px 3px 3px yellowgreen;
+    border: 3px solid yellowgreen;
 }
 
 .btn-1{
